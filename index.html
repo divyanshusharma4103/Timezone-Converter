@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Timezone Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Timezone Converter</h2>
+
+    <label for="time">Select Time:</label>
+    <input type="datetime-local" id="time" />
+
+    <label for="from">From Timezone:</label>
+    <select id="from">
+      <option value="UTC">UTC</option>
+      <option value="Asia/Kolkata">Asia/Kolkata</option>
+      <option value="America/New_York">America/New_York</option>
+      <option value="Europe/London">Europe/London</option>
+      <option value="Asia/Tokyo">Asia/Tokyo</option>
+    </select>
+
+    <label for="to">To Timezone:</label>
+    <select id="to">
+      <option value="UTC">UTC</option>
+      <option value="Asia/Kolkata">Asia/Kolkata</option>
+      <option value="America/New_York">America/New_York</option>
+      <option value="Europe/London">Europe/London</option>
+      <option value="Asia/Tokyo">Asia/Tokyo</option>
+    </select>
+
+    <button onclick="convertTime()">Convert</button>
+
+    <div class="result" id="result">Converted time will appear here</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
